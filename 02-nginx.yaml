@@ -4,11 +4,11 @@
   tasks:
   - name: install nginx
     ansible.builtin.dnf:
-     name: httpd
+     name: install
      state: latest
   - name: run nginx
     ansible.builtin.service:
-     name: httpd
+     name: start
      state: started 
      enabled: yes
 

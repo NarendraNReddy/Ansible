@@ -1,0 +1,12 @@
+- name: multi Play-1
+  hosts: localhost
+  become: no
+  tasks: 
+  - ansible.builtin.debug:
+      msg: "I am in Play-1 and Task-1"
+- name: multi Play-2
+  hosts: localhost
+  become: no 
+  tasks:
+  - ansible.builtin.debug:
+      msg:I am in Play-2 and Task-1"    

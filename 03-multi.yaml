@@ -9,4 +9,6 @@
   become: no 
   tasks:
   - ansible.builtin.debug:
-      msg:I am in Play-2 and Task-1"    
+      msg: "I am in Play-2 an Task-2"
+     
+  
